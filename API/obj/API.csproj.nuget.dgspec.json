@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/leandro.souza/Documents/dotnet core/dating-app/API/API.csproj": {}
+    "/Users/leandro.souza/Documents/dotnet/dating-app/API/API.csproj": {}
   },
   "projects": {
-    "/Users/leandro.souza/Documents/dotnet core/dating-app/API/API.csproj": {
+    "/Users/leandro.souza/Documents/dotnet/dating-app/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leandro.souza/Documents/dotnet core/dating-app/API/API.csproj",
+        "projectUniqueName": "/Users/leandro.souza/Documents/dotnet/dating-app/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/leandro.souza/Documents/dotnet core/dating-app/API/API.csproj",
+        "projectPath": "/Users/leandro.souza/Documents/dotnet/dating-app/API/API.csproj",
         "packagesPath": "/Users/leandro.souza/.nuget/packages/",
-        "outputPath": "/Users/leandro.souza/Documents/dotnet core/dating-app/API/obj/",
+        "outputPath": "/Users/leandro.souza/Documents/dotnet/dating-app/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/leandro.souza/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.15, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -45,6 +49,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.5, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.11.0, )"
             }
           },
           "imports": [
