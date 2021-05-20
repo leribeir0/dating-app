@@ -1,10 +1,10 @@
-<div class ="container mt-5">
+<div class ="container mt-3">
     <div *ngIf="!registerMode" style='text-align: center;'>
         <h1>Conheça pessoas novas sem sair de casa</h1>
         <p class= "lead">Ta esperando o que? Registra-se e curta!</p>
         <div>
-            <button (click)="registerToggle()" class="btn btn-primary btn-lg mr-2">Registrar-se</button>
-            <button class="btn btn-info btn-lg">Saiba mais</button>
+            <button style="margin:5px" (click)="registerToggle()" class="btn btn-primary mr-3">Registrar-se</button>
+            <button style="margin:5px" class="btn btn-info  mr-3">Saiba mais</button>
         </div>
     </div>
     <div *ngIf="registerMode" aclass="container">
