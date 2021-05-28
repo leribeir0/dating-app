@@ -35,25 +35,18 @@ namespace API.Controllers
         public ActionResult<string> GetServerError()
         {
 
+            var thing = _context.Users.Find(-1);
 
-            try
-            {
-                var thing = _context.Users.Find(-1);
+            var thingToReturn = thing.ToString();
 
-                var thingToReturn = thing.ToString();
+            return thingToReturn;
 
-                return thingToReturn;
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.ToString());
-            }
         }
 
         [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
         {
-            return "Essa requisição não é válida :(";
+            return BadRequest("Essa requisição não é válida :(");
         }
     }
 }
